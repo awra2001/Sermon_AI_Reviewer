@@ -1,0 +1,36 @@
+{
+  "name": "sermon-curation-system",
+  "version": "1.0.0",
+  "description": "A system for curating and analyzing sermon manuscripts in Obsidian",
+  "main": "api-integration.js",
+  "scripts": {
+    "start": "node api-integration.js",
+    "validate": "node yaml-generator.js validate",
+    "generate": "node yaml-generator.js generate",
+    "fix": "node yaml-generator.js fix",
+    "analyze": "node llm-metadata-generator.js analyze",
+    "generate-metadata": "node llm-metadata-generator.js generate",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "obsidian",
+    "markdown",
+    "sermon",
+    "yaml",
+    "api",
+    "llm"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.18.2",
+    "gray-matter": "^4.0.3",
+    "js-yaml": "^4.1.0",
+    "luxon": "^3.5.0",
+    "node-fetch": "^2.7.0",
+    "openai": "^4.89.0"
+  }
+}
