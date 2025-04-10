@@ -21,7 +21,7 @@ function generateSermonYAML(sermonData = {}) {
     emotional_presence: 0,
     metaphorical_resonance: 0,
     closing_force: 0,
-    improvisational_trust: 0
+    embodied_authority: 0
   };
 
   // Get current date if not provided
@@ -83,7 +83,7 @@ function validateSermonYAML(sermonYAML) {
     const scoreFields = [
       'theological_cohesion', 'scriptural_integration', 'structural_clarity',
       'liturgical_harmony', 'voice_fidelity', 'emotional_presence',
-      'metaphorical_resonance', 'closing_force', 'improvisational_trust'
+      'metaphorical_resonance', 'closing_force', 'embodied_authority'
     ];
     for (const field of scoreFields) {
       const score = sermonYAML.radar_score[field];
@@ -234,7 +234,7 @@ function updateFileWithRadarSection(filePath, yamlData, justifications, modelNam
       'emotional_presence',
       'metaphorical_resonance',
       'closing_force',
-      'improvisational_trust'
+      'embodied_authority'
     ];
     categories.forEach(category => {
       if (yamlData.radar_score && yamlData.radar_score[category] !== undefined) {
